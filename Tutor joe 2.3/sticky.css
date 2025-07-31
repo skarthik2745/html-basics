@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100px;
+    width: 100%;
+}
+#header,#footer{
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+}
+#navbar{
+height: 50px;
+    width: 100%;
+    background-color: chartreuse;
+    position: sticky;
+    top: 0;
+}
+
+#box{
+    width: 100%;
+    padding: 20px;
+}
+
+#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+}

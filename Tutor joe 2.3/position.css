@@ -1,0 +1,17 @@
+/*
+Static Relative LTRB Absolute (LTRB Relative) Fixed Sticky
+*/
+
+.main{
+position: relative;
+}
+.box1{
+position: fixed;
+bottom: 0;
+}
+.box2{
+
+}
+.box3{
+
+}
