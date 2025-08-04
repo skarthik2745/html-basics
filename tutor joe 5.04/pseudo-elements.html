@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pseudo elements</title>
+  <style>
+    input::placeholder {
+      color: teal;
+    }
+
+    p::selection {
+      background-color: #222f3e;
+      color: white;
+    }
+
+    p::first-letter {
+      font-size: 18px;
+      font-weight: bold;
+      color: red;
+    }
+
+    p::first-line {
+      color: blue;
+    }
+
+    .box {
+      background-color: #333;
+      color: white;
+      width: 300px;
+      height: 100px;
+      position: relative;
+    }
+
+    .box::before {
+      content: '';
+      width: 100%;
+      height: 20px;
+      background-color: #ff4757;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .box::after {
+      content: '';
+      width: 100%;
+      height: 20px;
+      background-color: #ff4757;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"><br><br>pseudo elements</div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel veniam expedita maxime voluptates autem officia iste ut at ipsam.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel veniam expedita maxime voluptates autem officia iste ut at ipsam.</p>
+
+  <input type="text" placeholder="Enter Name">
+
+</body>
+</html>

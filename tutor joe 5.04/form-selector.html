@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Focus style */
+    #t1:focus {
+      outline: none;
+      border: 4px solid brown;
+    }
+
+    /* Checked checkbox style */
+    input[type="checkbox"]:checked {
+      box-shadow: 0 0 0 3px red;
+    }
+
+    /* Enabled input */
+    input[type="text"]:enabled {
+      background-color: pink;
+    }
+
+    /* Disabled input */
+    input[type="text"]:disabled {
+      background-color: red;
+    }
+
+    /* Required input */
+    input[type="text"]:required {
+      background-color: green;
+    }
+
+    /* Read-only email */
+    input[type="email"]:read-only {
+      background-color: gray;
+    }
+
+    /* Read-write email */
+    input[type="email"]:read-write {
+      background-color: plum;
+    }
+
+    /* Invalid input */
+    input[type="text"]:invalid {
+      border-color: red;
+      border: 4PX solid;
+    }
+
+    /* Valid input */
+    input[type="text"]:valid {
+      border-color: lightgreen;
+    }
+
+    input[type='radio']:default {
+  box-shadow: 0 0 0 3px green;
+}
+
+option:default {
+  color: red;
+}
+  </style>
+</head>
+<body>
+  <h3>Form CSS Pseudo Class Selector</h3>
+
+  <span>:focus</span><br>
+  <input type="text" id="t1">
+  <hr>
+
+  <span>:checked</span><br>
+  <input type="checkbox" id="cricket">
+  <label for="cricket">Cricket</label><br>
+  <input type="checkbox" id="football">
+  <label for="football">Football</label><br>
+  <input type="checkbox" id="tennis">
+  <label for="tennis">Tennis</label>
+  <hr>
+
+  <span>:enabled :disabled :required </span><br>
+  <input type="text"><br>
+  <input type="text" disabled><br>
+  <input type="text" required>
+  <hr>
+
+  <span>:read-only | :read-write</span><br>
+  <input type="email"><br>
+  <input type="email" readonly>
+  <hr>
+
+  <span>:valid | :invalid</span><br>
+  <input type="text" placeholder="Enter Username" pattern="[a-z]*">
+  <hr>
+
+  <span>:default</span><br>
+<input type="radio" name="gender" id="male" checked>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+<br>
+<select>
+  <option value="">Select</option>
+  <option value="C">C</option>
+  <option value="C++">C++</option>
+  <option value="Java">Java</option>
+  <option value="CSS" selected>CSS</option>
+</select>
+</body>
+</html>

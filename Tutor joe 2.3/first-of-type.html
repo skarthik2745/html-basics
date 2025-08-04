@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:first-of-type | :last-of-type</title>
+    <style>
+      /* Styling for <li> elements */
+      li:first-of-type {
+        color: red;
+      }
+      li:last-of-type {
+        color: green;
+      }
+
+      /* Styling for top-level <p> elements */
+      p:first-of-type {
+        color: red;
+      }
+      p:last-of-type {
+        color: green;
+      }
+
+      /* General paragraph style for visibility */
+
+      /* Footer style */
+      footer {
+        font-size: 40px;
+        font-family: cursive;
+        color: red;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>:first-of-type | :last-of-type</h1>
+
+    <!-- First list group -->
+    
+      <li>item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+    
+
+    <!-- Second list group -->
+    <ul>
+      <li>item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+    </ul>
+
+    <!-- Top-level paragraphs -->
+    <p>
+      <b>Para-1</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Aliquam maxime voluptates molestias alias quasi earum et modi officia,
+      laboriosam eum.
+    </p>
+    <p>
+      <b>Para-2</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Aliquam maxime voluptates molestias alias quasi earum et modi officia,
+      laboriosam eum.
+    </p>
+    <p>
+      <b>Para-3</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Aliquam maxime voluptates molestias alias quasi earum et modi officia,
+      laboriosam eum.
+    </p>
+    <hr />
+
+    <!-- Paragraphs inside a <div> (different context for :first-of-type, :last-of-type) -->
+    <div>
+      <p>
+        <b>Div Para-1</b> Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Aliquam maxime voluptates molestias alias quasi earum et modi
+        officia, laboriosam eum.
+      </p>
+      <p>
+        <b>Div Para-2</b> Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Aliquam maxime voluptates molestias alias quasi earum et modi
+        officia, laboriosam eum.
+      </p>
+
+      <p>
+        <b>Div Para-2</b> Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Aliquam maxime voluptates molestias alias quasi earum et modi
+        officia, laboriosam eum.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>sk-ultimate</footer>
+  </body>
+</html>

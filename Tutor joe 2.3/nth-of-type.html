@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Pseudo Class Selector</title>
+  <style>
+    /* Select the last <p> element of its type */
+    p:nth-last-of-type(1) {
+      color: blue;
+    }
+p:nth-of-type(1) {
+      color: red;
+    }
+
+    /* Select the first <li> element of its type */
+    .l1 li:nth-of-type(1) {
+      color: red;
+    }
+
+    /* Select the last <li> element of its type */
+    .l1 li:nth-last-of-type(1) {
+      color: blue;
+    }
+
+    /* In the .l2 list, select odd <li> items */
+    .l2 li:nth-of-type(odd) {
+      color: purple;
+    }
+
+    /* In the .l2 list, select even <li> items */
+    .l2 li:nth-of-type(even) {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Pseudo Class Selector | :nth-of-type | :nth-last-of-type</h2>
+
+  <!-- First list -->
+  <ul class="l1">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+  </ul>
+
+  <!-- Second list with class l2 -->
+  <ul class="l2">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+  </ul>
+
+  <!-- Some paragraph elements -->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>
+
+  <!-- Last paragraph to demonstrate nth-last-of-type -->
+  <p><strong>Tutor Joes</strong></p>
+
+</body>
+</html>

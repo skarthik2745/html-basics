@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Pseudo Class Selector | first-child | last-child</title>
+    <style>
+        #list-1 li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: blue;
+        }
+        p:first-child{
+            color: red;
+        }
+        div p:last-child{
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Pseudo Class Selector | first-child | last-child</h3>
+
+    <ul id="list-1">
+      <li>Lorem ipsum dolor sit amet consectetu-1</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu-6</li>
+    </ul>
+
+    <ul id="list-2">
+      <li>Lorem ipsum dolor sit amet consectetu-1</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu</li>
+      <li>Lorem ipsum dolor sit amet consectetu-6</li>
+    </ul>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        deleniti doloremque nisi quo modi ipsum dolor, nemo omnis eaque
+        provident.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        deleniti doloremque nisi quo modi ipsum dolor, nemo omnis eaque
+        provident.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        deleniti doloremque nisi quo modi ipsum dolor, nemo omnis eaque
+        provident.
+      </p>
+    </div>
+  </body>
+</html>

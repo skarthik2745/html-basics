@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>General Sibling Selector Example</title>
+  <style>
+    h2 ~ p {
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Just for contrast */
+    p {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Heading One</h2>
+  <p>This paragraph will be blue. ✅</p>
+  <p>This is also blue. ✅</p>
+  <div>Some content</div>
+  <p>This one is also blue. ✅</p>
+
+  <h3>Another heading</h3>
+  <p>This paragraph is  affected ✅. </p>
+
+</body>
+</html>

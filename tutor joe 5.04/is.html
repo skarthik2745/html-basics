@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:is() CSS Pseudo Class Selector</title>
+
+    <style>
+        /* #d1 h2,
+        #d1 h3,
+        #d1 h4 {
+            color: red;
+        } */
+
+        #d1 :is(h2, h3, h4) {
+            color: blue;
+        }
+
+        /* #d1 h2,
+        #d2 h2 {
+            color: brown;
+        } */
+
+        :is(#d1, #d2) h2 {
+            color: green;
+        }
+
+        :is(#d1, #d2) :is(h2, p) {
+            color: red;
+        }
+
+        :is(#d1, #d2) h2:hover {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>:is() CSS Pseudo Class Selector</h1>
+
+    <div id="d1">
+        <h2>H2 - Heading One</h2>
+        <h3>H3 - Sub Heading-1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequuntur nisi praesentium quae esse quisquam earum debitis quaerat odio eaque.</p>
+        <h4>H4 - Sub Heading-2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vitae obcaecati quae, amet illo debitis!</p>
+    </div>
+
+    <hr>
+
+    <div id="d2">
+        <h2>H2 - Heading Two</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequuntur nisi praesentium quae esse quisquam earum debitis quaerat odio eaque.</p>
+    </div>
+
+    <p><b>Outside</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, a nesciunt veniam mollitia accusantium fugit pariatur, quos alias dicta similique fuga possimus repellendus et amet!</p>
+</body>
+</html>

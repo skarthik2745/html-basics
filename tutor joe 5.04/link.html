@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Anchor Pseudo Class</title>
+  <style>
+    div a {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      background-color: aliceblue;
+      text-align: center;
+      line-height: 30px;
+      margin: 5px;
+      text-decoration: none;
+    }
+
+    div a:link {
+      color: blue;
+    }
+
+    div a:visited {
+      color: purple;
+    }
+
+    div a:hover {
+      background-color: rgb(35, 4, 240);
+      font-weight: bold;
+      color: aliceblue;
+    }
+
+    div a:active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3>CSS Pseudo Class Selector <br> :link | :hover | :visited | :active </h3>
+
+  <div>
+    <a href="#l1">Link-1</a>
+    <a href="#l2">Link-2</a>
+    <a href="#l3">Link-3</a>
+    <a href="#l4">Link-4</a>
+  </div>
+
+  <p><i><b><font size="6">Tutor Joes</font></b></i></p>
+</body>
+</html>
