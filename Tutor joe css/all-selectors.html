@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* 1. Element selector */
+    p {
+      color: green;
+    }
+
+    /* 2. Class selector */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* 3. ID selector */
+    #special {
+      font-weight: bold;
+      color: blue;
+    }
+
+    /* 4. Group selector */
+    h1, h2 {
+      text-align: center;
+      color: purple;
+    }
+
+    /* 5. Descendant selector */
+    div p {
+      background-color: lightgray;
+    }
+
+    /* 6. Child selector */
+    div > p {
+      border: 1px solid red;
+    }
+
+    /* 7. Attribute selector */
+    a[title] {
+      color: red;
+    }
+
+    /* 8. Attribute selector (specific value) */
+    a[title="link1"] {
+      color: orange;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>CSS Selector Examples</h1>
+  <h2>Testing Various Selectors</h2>
+
+  <p>This is a normal paragraph.</p>
+  <p class="highlight">This paragraph is highlighted.</p>
+  <p id="special">This paragraph is special.</p>
+
+  <div>
+    <p>This paragraph is inside a div (descendant selector).</p>
+    <span>
+      <p>This paragraph is deeply nested inside span in a div.</p>
+    </span>
+  </div>
+
+  <div>
+    <p>This is a direct child paragraph of a div (child selector).</p>
+  </div>
+
+  <a href="#" title="link1">This is link1</a><br>
+  <a href="#" title="link2">This is link2</a>
+
+</body>
+</html>

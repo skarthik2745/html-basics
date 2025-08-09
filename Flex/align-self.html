@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pattern.css" />
+    <style>
+      .container {
+        display: flex;
+        height: 600px;
+        width: 450px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .box:nth-child(1) {
+        align-self: flex-end; /* This box will align itself to the end of the flex container */
+      }
+        .box:nth-child(2) {
+            align-self: center; /* This box will align itself to the center of the flex container */
+        }
+        .box:nth-child(3) {
+            align-self: flex-start; /* This box will align itself to the start of the flex container */
+        }
+        .box:nth-child(4) {
+            align-self: stretch;       
+        /* This box will stretch to fill the height of the flex container */}
+        .box:nth-child(5) {
+            align-self: baseline; /* This box will align itself to the baseline of the flex container */
+        }
+    </style>
+  </head>
+  <body>
+    <h3>flex justify</h3>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>

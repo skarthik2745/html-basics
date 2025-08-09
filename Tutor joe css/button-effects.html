@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Button Effects Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: lightblue;
+      color: black;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    /* Hover effect */
+    a.button:hover {
+      background-color: pink;
+      color: rgb(243, 7, 7);
+    }
+
+    /* Active effect (when clicking) */
+    a.button:active {
+      background-color: rgb(6, 240, 244);
+    }
+
+    /* Visited link effect */
+    a.button:visited {
+      background-color: lightgreen;
+    }
+
+    /* Focus effect (keyboard tab) */
+    a.button:focus {
+      outline: 3px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Button Effects</h1>
+  <a href="https://example.com" class="button">Click Me</a>
+
+</body>
+</html>
